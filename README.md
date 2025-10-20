@@ -1,0 +1,1 @@
+Personal portfolio with projects displayed

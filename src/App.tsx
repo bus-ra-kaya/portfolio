@@ -34,7 +34,7 @@ export default function App() {
         <h3>Projects</h3>  
       <section className='projects'>
         <Project 
-        image={"src/assets/weatherby.png"} 
+        image={"./weatherby.png"} 
         imageAlt="weather app screenshot" 
         header="WeatherBy"
         description="A minimalistic weather app for keeping track of time and forecast information"
@@ -42,7 +42,7 @@ export default function App() {
         />
 
         <Project 
-        image={"src/assets/type-righter.png"} 
+        image={"./type-righter.png"} 
         imageAlt="type speed test screenshot" 
         header="TypeRighter"
         description="A typing speed test with real time data. Currently in development."
