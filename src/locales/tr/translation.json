@@ -1,0 +1,11 @@
+{
+  "description": "Merhaba, ben Büşra. React ve RESTful API kullanımında deneyimli bir web geliştiricisiyim. Şu anda bir yazma hızı testi geliştiriyorum.",
+  "switchLang": "Dili İngilizceye çevir",
+  "projects": "Projeler",
+  "weatherByDesc": "Anlık hava durumu, nem ve rüzgar hızını takip etmeye yarayan minimal bir uygulama.",
+  "weatherByAlt": "hava durumu uygulaması ekran görüntüsü",
+  "typeRighterDesc": "Gerçek zamanlı istatistiklerle yazma performansını analiz eden bir web uygulaması.",
+  "wip":"Geliştirme aşamasında",
+  "typeRighterAlt": "yazma hızı testi ekran görüntüsü",
+  "createTogether": "Birlikte üretelim!"
+}

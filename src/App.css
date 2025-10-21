@@ -22,6 +22,7 @@ a {
   margin-left: 50px;
   margin-right: auto;
   text-align: left;
+  white-space: nowrap;
 }
 
 button {
@@ -34,7 +35,6 @@ button {
   font-size: 1rem;
   margin: 4px 2px;
   cursor: pointer;
-  font-weight: bold;
   transition: transform 0.15s ease;
 }
 
@@ -66,7 +66,12 @@ button:active {
   mask-image: url("/linkedin.png");
 }
 
-.github, .linkedin, .instagram {
+.world{
+  -webkit-mask-image: url("/world.svg");
+  mask-image: url("/world.svg");
+}
+
+.github, .linkedin, .world{
   width: 25px;
   height: 25px;
   padding-left: 2px;
@@ -92,7 +97,7 @@ button:active {
   mask-position: no-repeat;
 }
 
-button:hover > .icon, .icon:hover, {
+button:hover > .icon, .icon:hover {
   background-color: var(--color-btn-hover);
   transform: scale(1.03);
 }
@@ -125,6 +130,7 @@ button:active > .icon, .icon:active {
 
 .project-desc{
 height: 100px;
+text-shadow: 0px 0px 10px black;
 }
 
 .project-card h3 {
@@ -137,13 +143,35 @@ height: 100px;
   margin-right: 10px;
 }
 
-footer {
+footer, .contact {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.contact {
+  margin: 60px 0;
+}
+
+.contact h1 {
+  font-size: 3rem;
+}
+
+.contact button{
+  border: 1px solid var(--color-btn);
+  border-radius: 15px;
+  transition: transform 0.1.5s ease;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: var(--color-accent);
+  box-shadow: 0px 0px px var(--color-accent);
 }
 
 @media (max-width: 1500px) {
-
   .title{
     margin: 0;
   }
@@ -164,31 +192,43 @@ footer {
 }
 
 @media (max-width: 800px) {
-.description {
-    max-width: 500px;
+
+  .app-container{
+    margin: 30px 30px;
   }
+
+  .title {
+    font-size: 2.4rem;
+    margin-left: 0;
+  }
+  .description {
+      max-width: 500px;
+    }
   span {
     display: none;
   }
-
-  .title{
-    margin-left: 10px;
-  }
-
+  
   .navbar-right {
     margin-right: -10px;
   }
 
   .projects {
   grid-template-columns: repeat(1, minmax(200px, 1fr));
-}
+  }
 
+  .contact h1 {
+  font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 450px) {
-.app-container {
-  margin: 30px 30px;
-}
 
+  .title {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .app-container {
+    margin: 30px 20px;
+  }
 }
 

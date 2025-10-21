@@ -1,7 +1,10 @@
-import './App.css'
-import Project from './components/project'
+import './App.css';
+import Project from './components/project';
+import LangToggle from './components/langToggle';
+import {useTranslation} from "react-i18next";
 
 export default function App() {
+  const { t } = useTranslation();
 
   return (
     <div className="app-container">
@@ -10,6 +13,7 @@ export default function App() {
                 <h1 className="title">Büşra Kaya</h1>
             </a>
           <div className="navbar-right">
+
               <a href="https://github.com/bus-ra-kaya" target="_blank">
                 <button>
                   <div className="github icon"></div>
@@ -22,36 +26,42 @@ export default function App() {
                   <span>Linkedin</span>
                 </button>
               </a>
+              <LangToggle/>
           </div>
       </nav> 
       <main className="description">
 
-        <p>Hello, I'm Büşra. I'm a web developer with experience working with React and integrating 
-          RESTful APIs. Currently making a typing speed test application.
-        </p>
+        <p>{t("description")}</p>
 
         <br />
-        <h3>Projects</h3>  
+        <h3>{t("projects")}</h3>  
       <section className='projects'>
         <Project 
         image={"./weatherby.png"} 
-        imageAlt="weather app screenshot" 
+        imageAlt={t("weatherByAlt")}
         header="WeatherBy"
-        description="A minimalistic weather app for keeping track of time and forecast information"
+        description={t("weatherByDesc")}
         status="07/2025"
         />
 
         <Project 
         image={"./type-righter.png"} 
-        imageAlt="type speed test screenshot" 
+        imageAlt={t("typeRighterAlt")}
         header="TypeRighter"
-        description="A typing speed test with real time data. Currently in development."
-        status="In Development"
+        description={t("typeRighterDesc")}
+        status={t("wip")}
         />
 
       </section>
         
       </main>
+
+      <section className="contact">
+        <h1>{t("createTogether")}</h1>
+        <a href="mailto:kaya41@protonmail.com">
+          <button>kaya41@protonmail.com</button>
+        </a>
+      </section>
 
       <footer>
         2025 © — Büşra Kaya

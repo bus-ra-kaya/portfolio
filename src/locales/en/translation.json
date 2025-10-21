@@ -1,0 +1,11 @@
+{
+    "description": "Hello, I'm Büşra. I'm a web developer with experience working with React and integrating RESTful APIs. Currently making a typing speed test application.",
+    "switchLang": "Change language to Turkish",
+    "projects": "Projects",
+    "weatherByDesc": "A minimal app for tracking current weather, humidity, and wind speed.",
+    "weatherByAlt":"weather app screenshot",
+    "typeRighterDesc":"A web app that analyzes typing performance with real-time statistics.",
+    "typeRighterAlt":"typing speed test screenshot",
+    "wip":"In Development",
+    "createTogether": "Let's create together!"
+}
