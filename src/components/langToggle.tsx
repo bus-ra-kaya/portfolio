@@ -1,6 +1,6 @@
 import {useTranslation} from "react-i18next";
 
-export default function LangToggle(){
+export default function LangToggle(): React.JSX.Element{
     const {i18n, t} = useTranslation();
 
 
@@ -9,8 +9,13 @@ export default function LangToggle(){
     }
 
     return (
-        <button title={t ("switchLang")} onClick={toggleLanguage}>
-            <div className="world icon"></div>
+        <button 
+        title={t ("switchLang")} 
+        onClick={toggleLanguage}
+        aria-label={t ("switchLang")}
+        className="nav-btn">
+
+            <div className="world icon" aria-hidden="true"></div>
         </button>
     )
 }

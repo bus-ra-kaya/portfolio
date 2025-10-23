@@ -1,11 +1,34 @@
 {
-  "description": "Merhaba, ben Büşra. React ve RESTful API kullanımında deneyimli bir web geliştiricisiyim. Şu anda bir yazma hızı testi geliştiriyorum.",
+  "description": "Merhaba, ben Büşra. React, Typescript ve RESTful API kullanımında deneyimli bir web geliştiricisiyim. Şu anda bir yazma hızı testi geliştiriyorum.",
   "switchLang": "Dili İngilizceye çevir",
   "projects": "Projeler",
-  "weatherByDesc": "Anlık hava durumu, nem ve rüzgar hızını takip etmeye yarayan minimal bir uygulama.",
-  "weatherByAlt": "hava durumu uygulaması ekran görüntüsü",
-  "typeRighterDesc": "Gerçek zamanlı istatistiklerle yazma performansını analiz eden bir web uygulaması.",
-  "wip":"Geliştirme aşamasında",
-  "typeRighterAlt": "yazma hızı testi ekran görüntüsü",
+  "WeatherBy": {
+    "header": "WeatherBy",
+    "desc": "Anlık hava durumu, nem ve rüzgar hızını takip etmeye yarayan minimal bir uygulama.",
+    "alt": "hava durumu uygulaması ekran görüntüsü",
+    "details": [
+      "Herhangi bir şehri arama ve etkileşimli harita üzerinden konum seçme.",
+      "Seçilen konum için canlı saat güncellemeleri.",
+      "OpenWeather'dan dinamik olarak çekilen hava durumu verileri."
+    ],
+    "tech": "HTML, CSS, Javascript, React",
+    "github": "https://github.com/bus-ra-kaya/Weatherby"
+  },
+  "TypeRighter": {
+    "header": "TypeRighter",
+    "desc": "Gerçek zamanlı istatistiklerle yazma performansını analiz eden bir web uygulaması.",
+    "alt": "yazma hızı testi ekran görüntüsü",
+    "details": [
+      "Dakika başına kelime (wpm), doğruluk ve hata oranını hesaplar.",
+      "Sayılar veya noktalama işaretleri içeren farklı test seçenekleri.",
+      "Dört farklı tema seçeneğiyle kişiselleştirme imkanı."
+    ],
+    "tech": "HTML, CSS, React, Typescript",
+    "github": "https://github.com/bus-ra-kaya/type-righter"
+  },
+  "details": "Detaylar:",
+  "tech-used": "Kullanılan teknolojiler:",
+  "wip": "Geliştirme aşamasında",
+  "githubLink":"Github",
   "createTogether": "Birlikte üretelim!"
 }
