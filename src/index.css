@@ -3,7 +3,31 @@
   --color-btn:  hsl(39, 23%, 70%);
   --color-btn-hover:  hsl(42, 77%, 89%);
   --color-btn-press:hsl(42, 14%, 59%);
-  --color-accent:hsl(15, 70%, 65%);
+  --color-accent:hsl(15, 77%, 71%);
+  --color-muted: hsl(42, 30%, 45%);
+
+  --space-none: 0;
+  --space-auto: auto;
+
+  --space--xxxs: 4px;
+  --space--xxs: 8px;
+  --space-xs: 10px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-md-lg: 24px;
+  --space-md-plus: 26px;
+  --space-lg: 30px;
+  --space-xl: 50px;
+  --space-xxl:80px;
+  --space-xxxl: 120px;
+
+
+  --font-size-s: 1rem;
+  --font-size-body: 1.2rem;
+  --font-size-md: 1.4rem;
+  --font-size-h4: 1.6rem;
+  --font-size-h2: 2rem;
+  --font-size-h1: 2.6rem;
 }
 
 
@@ -12,12 +36,21 @@ body {
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: var(--color-text);
     backdrop-filter: blur(40px);
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: var(--space-none);
+    padding: var(--space-none);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --color-btn: hsl(39, 28%, 72%);
+    --color-btn-hover: hsl(42, 80%, 92%);
+    --color-btn-press: hsl(42, 18%, 63%);
+  }
 }

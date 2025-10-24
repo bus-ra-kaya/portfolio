@@ -1,7 +1,9 @@
 {
-  "description": "Hello, I'm Büşra. I'm a web developer with experience working with React, Typescript and integrating RESTful APIs. Currently making a typing speed test application.",
+  "description": "Hello, I'm Büşra. I'm a web developer with experience working with React, Typescript and integrating RESTful APIs. I care about writing clean code and building maintainable, scalable projects. Currently working on a typing speed test application.",
   "switchLang": "Change language to Turkish",
   "projects": "Projects",
+  "mainNav":"Navigation",
+  "home":"main page",
   "WeatherBy": {
     "header": "WeatherBy",
     "desc": "A minimal app for tracking current weather, humidity, and wind speed.",
@@ -9,7 +11,7 @@
     "details": ["Search any city or select a location via interactive map.",
                 "Live location time updates for selected location.",
                 "Dynamic weather data pulled from OpenWeather."],
-    "tech": "HTML, CSS, Javascript, React, APIs",
+    "tech": "HTML, CSS, Javascript, React",
     "github": "https://github.com/bus-ra-kaya/Weatherby"
   },
   "TypeRighter": {
@@ -22,9 +24,9 @@
     "tech": "HTML, CSS, React, Typescript",
     "github": "https://github.com/bus-ra-kaya/type-righter"
   },
-  "details": "Details:",
   "tech-used": "Technologies used:",
   "wip": "In Development",
   "githubLink":"Github",
-  "createTogether": "Let's create together!"
+  "createTogether": "Let's create together!",
+  "emailMe":"Send an email"
 }

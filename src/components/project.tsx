@@ -20,6 +20,20 @@ export default function Project (props:ProjectProps): React.JSX.Element{
 
   const details = t(`${props.header}.details`, {returnObjects: true}) as string[];
 
+  function modalToggle(e: React.KeyboardEvent<HTMLElement>){
+    if(e.key === "Escape"){
+      setShowDetails(false);
+    }
+  }
+
+  const modalWrapperRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    if(showDetails) {
+      modalWrapperRef.current?.focus();
+    }
+  }, [showDetails]);
+
   return (
     <>
     <button className="project-card"
@@ -32,27 +46,32 @@ export default function Project (props:ProjectProps): React.JSX.Element{
     </button>
 
     {showDetails && 
-      <button className="card-detail-wrap" onClick={() => setShowDetails(prev => !prev)}>
-        <div className="card-detail">
+      <div className="card-detail-wrap" ref={modalWrapperRef} onClick={() => setShowDetails(prev => !prev)}
+      onKeyDown={(e) => {modalToggle(e)}} tabIndex={0}>
+        <div className="card-detail" onClick={(e) => e.stopPropagation()}>
 
           <img src={props.image} alt={props.imageAlt} />
 
           <div className="info">
-            <section>
+           
               <h3>{props.header}</h3>
-              <p className="project-desc">{props.description}</p>
-              {t("details")} <ul> {details.map((line) => {
+              <p className="project-desc">{props.description}</p> 
+              
+              <ul> {details.map((line) => {
                 return <li key={line}>{line}</li>
               })}</ul>
-              <p>{t("tech-used")} {props.tech}</p>
-            </section>
+              
+              <p>
+                <span> {t("tech-used")} </span> 
+                {props.tech}</p>
+          
             <button onClick={() => window.open(props.github, "_blank")} className="github-btn">
-            <div className="github icon"></div>{t("githubLink")}
+            {t("githubLink")}
             </button>
           </div>
 
         </div>
-      </button>
+      </div>
     }
     </>
   )

@@ -1,7 +1,9 @@
 {
-  "description": "Merhaba, ben Büşra. React, Typescript ve RESTful API kullanımında deneyimli bir web geliştiricisiyim. Şu anda bir yazma hızı testi geliştiriyorum.",
+  "description": "Merhaba, ben Büşra. React, Typescript ve RESTful API kullanımında deneyimli bir web geliştiricisiyim. Temiz kod yazımına ve sürdürülebilir proje yapısına önem veririm. Şu anda bir yazma hızı testi geliştiriyorum.",
   "switchLang": "Dili İngilizceye çevir",
   "projects": "Projeler",
+  "mainNav":"Navigasyon",
+  "home":"ana sayfa",
   "WeatherBy": {
     "header": "WeatherBy",
     "desc": "Anlık hava durumu, nem ve rüzgar hızını takip etmeye yarayan minimal bir uygulama.",
@@ -26,9 +28,9 @@
     "tech": "HTML, CSS, React, Typescript",
     "github": "https://github.com/bus-ra-kaya/type-righter"
   },
-  "details": "Detaylar:",
   "tech-used": "Kullanılan teknolojiler:",
   "wip": "Geliştirme aşamasında",
   "githubLink":"Github",
-  "createTogether": "Birlikte üretelim!"
+  "createTogether": "Birlikte üretelim!",
+  "emailMe":"Email gönder"
 }

@@ -3,26 +3,28 @@ import Project from './components/project';
 import LangToggle from './components/langToggle';
 import {useTranslation} from "react-i18next";
 
-export default function App() {
+export default function App():React.JSX.Element {
   const { t } = useTranslation();
 
 
   return (
     <div className="app-container">
-      <nav className="navbar">
-              <a href="/"> 
+      <nav className="navbar" aria-label={t("mainNav")}>
+              <a href="/" className='link' aria-label={t("home")}> 
                 <h1 className="title">Büşra Kaya</h1>
             </a>
           <div className="navbar-right">
 
-              <a href="https://github.com/bus-ra-kaya" target="_blank">
-                <button className='nav-btn'>
+              <a href="https://github.com/bus-ra-kaya" target="_blank" className='link'
+              rel='noopener noreferrer'>
+                <button className='nav-btn' aria-label="Github">
                   <div className="github icon"></div>
                   <span>Github</span>
                 </button>
               </a>
-              <a href="https://www.linkedin.com/in/bus-ra-ka-ya/" target="_blank">
-                <button className='nav-btn'>
+              <a href="https://www.linkedin.com/in/bus-ra-ka-ya/" target="_blank" className='link'
+              rel='noopener noreferrer'>
+                <button className='nav-btn' aria-label='Linkedin'>
                   <div className="linkedin icon"></div>
                   <span>Linkedin</span>
                 </button>
@@ -36,7 +38,7 @@ export default function App() {
 
         <br />
         <h3>{t("projects")}</h3>  
-      <section className='projects'>
+      <section className='projects' aria-label={t("projects")}>
         <Project 
         image="./weatherby.png"
         imageAlt={t("WeatherBy.alt")}
@@ -61,10 +63,11 @@ export default function App() {
         
       </main>
 
-      <section className="contact">
+      <section className="contact" aria-label={t("emailMe")}>
         <h1>{t("createTogether")}</h1>
         <a href="mailto:kaya41@protonmail.com">
-          <button className='nav-btn'>kaya41@protonmail.com</button>
+          <button className='nav-btn'> 
+             kaya41@protonmail.com</button>
         </a>
       </section>
 
