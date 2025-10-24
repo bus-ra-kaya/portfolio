@@ -201,7 +201,7 @@ footer, .contact {
   border: none;
   position: fixed;
   inset: 0;
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: hsla(0, 0%, 0%, 0.705);
   z-index: 5;
 }
 
@@ -211,13 +211,13 @@ footer, .contact {
   left: 0;
   right: 0;
   margin: var(--space-none) var(--space-auto);
-  height: 550px;
+  height: 600px;
   width: 920px;
   border-radius: 10px;
   color: var(--color-text);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: hsl(60, 1%, 15%);
+  background-color: hsla(60, 1%, 15%, 0.719);
   box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.671);
 }
 
@@ -236,8 +236,9 @@ footer, .contact {
 }
 
 .info {
+  margin: var(--space-auto);
   margin-right: var(--space-md);
-  margin-top: var(--space-sm);
+  text-shadow: 0px 0px 4px black;
   font-size: var(--font-size-body);
 }
 
@@ -280,8 +281,8 @@ footer, .contact {
   }
 
   .card-detail {
-  height: 500px;
-  width: 850px;
+  height: 550px;
+  width: 830px;
   grid-template-columns: 4fr 3fr;
   font-size: var(--font-size-body);
   }
@@ -291,9 +292,6 @@ footer, .contact {
     height: 400px;
   }
 
-  .info {
-    margin: 0;
-  }
 }
 
 @media(max-width: 850px){
@@ -309,8 +307,9 @@ footer, .contact {
       height: 360px;
   }
   .info {
-    margin: var(--space-lg);
+    margin:var(--space-none) var(--space-md);
   }
+  
 }
 
 
@@ -336,10 +335,6 @@ footer, .contact {
 
   .contact h1 {
   font-size: var(--font-size-h1);
-  }
-
-   .info {
-    margin: var(--space-md);
   }
 }
 
