@@ -6,6 +6,7 @@ interface ProjectProps{
   readonly imageAlt: string,
   readonly header: string,
   readonly description: string,
+  readonly details: string[],
   readonly status: string,
   readonly tech: string,
   readonly github: string,
@@ -17,8 +18,6 @@ export default function Project (props:ProjectProps): React.JSX.Element{
   const [showDetails,setShowDetails] = React.useState<boolean>(false);
 
   const { t } = useTranslation();
-
-  const details = t(`${props.header}.details`, {returnObjects: true}) as string[];
 
   function modalToggle(e: React.KeyboardEvent<HTMLElement>){
     if(e.key === "Escape"){
@@ -57,7 +56,7 @@ export default function Project (props:ProjectProps): React.JSX.Element{
               <h3>{props.header}</h3>
               <p className="project-desc">{props.description}</p> 
               
-              <ul> {details.map((line) => {
+              <ul> {props.details.map((line) => {
                 return <li key={line}>{line}</li>
               })}</ul>
               

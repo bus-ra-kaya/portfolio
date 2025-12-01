@@ -26,6 +26,13 @@
                 "Different test options like numbers or punctuation being included.",
                 "4 theme options for variety."]
   },
+  "library-api":{
+    "header": "Library API",
+    "desc": "A RESTful API that provides book data including titles, authors, genres, and publication years.",
+    "alt": "library api screenshot",
+    "details": ["Provides endpoints for listing all books or fetching individual book details.",
+              "Supports filtering by title, author, or genre."]
+  },
   "tech-used": "Technologies used:",
   "wip": "In Development",
   "githubLink":"Github",

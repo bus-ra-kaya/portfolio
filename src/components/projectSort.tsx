@@ -17,6 +17,7 @@ export default function ProjectSort({activeFilter, activeSortBy}: ProjectSortPro
     imageAlt: t(`${p.id}.alt`),
     header: t(`${p.id}.header`),
     description: t(`${p.id}.desc`),
+    details: t(`${p.id}.details`, {returnObjects: true}) as string[],
     status: p.status === "wip" ? t("wip") : p.status,
   }))
 
@@ -50,6 +51,7 @@ export default function ProjectSort({activeFilter, activeSortBy}: ProjectSortPro
           imageAlt={project.imageAlt}
           header={project.header}
           description={project.description}
+          details={project.details}
           status={project.status}
           tech={project.tech}
           github={project.github}

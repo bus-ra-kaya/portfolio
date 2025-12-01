@@ -10,7 +10,7 @@
     "newest": "En Yeniler",
     "oldest": "En Eskiler"
     },
-  "WeatherBy": {
+  "weatherby": {
     "header": "WeatherBy",
     "desc": "Anlık hava durumu, nem ve rüzgar hızını takip etmeye yarayan minimal bir uygulama.",
     "alt": "hava durumu uygulaması ekran görüntüsü",
@@ -19,7 +19,7 @@
       "Seçilen konum için canlı saat güncellemeleri.",
       "OpenWeather'dan dinamik olarak çekilen hava durumu verileri."
     ]},
-  "TypeRighter": {
+  "type-righter": {
     "header": "TypeRighter",
     "desc": "Gerçek zamanlı istatistiklerle yazma performansını analiz eden bir web uygulaması.",
     "alt": "yazma hızı testi ekran görüntüsü",
@@ -29,6 +29,15 @@
       "Dört farklı tema seçeneğiyle kişiselleştirme imkanı."
     ]
   },
+  "library-api": {
+  "header": "Kütüphane API",
+  "desc": "Başlık, yazar, tür ve yayın yılı gibi kitap verileri sağlayan bir API.",
+  "alt": "kütüphane api ekran görüntüsü",
+  "details": [
+    "Projedeki tüm kitaplarla ya da tercihe göre tek bir kitapla ilgili bilgi sunar.",
+    "Kitapları başlığa, yazara veya türe göre filtrelemeyi destekler."
+  ]
+},
   "tech-used": "Kullanılan teknolojiler:",
   "wip": "Geliştirme aşamasında",
   "githubLink":"Github",
