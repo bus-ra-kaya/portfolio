@@ -5,6 +5,10 @@
   --color-btn-press:hsl(42, 14%, 59%);
   --color-accent:hsl(15, 77%, 71%);
   --color-muted: hsl(42, 30%, 45%);
+  --color-dropdown-btn: hsl(0, 0%, 10%);
+  --color-dropdown-hover: hsl(42, 9%, 21%);
+  --color-dropdown-active: hsl(40, 11%, 32%);
+
 
   --space-none: 0;
   --space-auto: auto;

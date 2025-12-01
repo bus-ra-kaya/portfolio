@@ -1,0 +1,16 @@
+[
+    {
+    "id": "weatherby",
+    "image": "./weatherby.png",
+    "status": "07/2025",
+    "tech": "HTML/CSS Javascript React",
+    "github": "https://github.com/bus-ra-kaya/Weatherby"
+  },
+  {
+    "id": "type-righter",
+    "image": "./type-righter.png",
+    "status": "wip",
+    "tech": "HTML/CSS React Typescript",
+    "github": "https://github.com/bus-ra-kaya/type-righter"
+  }
+]

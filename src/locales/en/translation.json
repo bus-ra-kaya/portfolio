@@ -4,25 +4,27 @@
   "projects": "Projects",
   "mainNav":"Navigation",
   "home":"main page",
-  "WeatherBy": {
+  "projectGrouping": {
+    "filterBy": "Filter by",
+    "sortBy" : "Sort by",
+    "newest": "Newest",
+    "oldest": "Oldest"
+    },
+  "weatherby": {
     "header": "WeatherBy",
     "desc": "A minimal app for tracking current weather, humidity, and wind speed.",
     "alt": "weather app screenshot",
     "details": ["Search any city or select a location via interactive map.",
                 "Live location time updates for selected location.",
-                "Dynamic weather data pulled from OpenWeather."],
-    "tech": "HTML, CSS, Javascript, React",
-    "github": "https://github.com/bus-ra-kaya/Weatherby"
+                "Dynamic weather data pulled from OpenWeather."]
   },
-  "TypeRighter": {
+  "type-righter": {
     "header": "TypeRighter",
     "desc": "A web app that analyzes typing performance with real-time statistics.",
     "alt": "typing speed test screenshot",
     "details": ["Calculate wpm, accuracy and errors over time.",
                 "Different test options like numbers or punctuation being included.",
-                "4 theme options for variety."],
-    "tech": "HTML, CSS, React, Typescript",
-    "github": "https://github.com/bus-ra-kaya/type-righter"
+                "4 theme options for variety."]
   },
   "tech-used": "Technologies used:",
   "wip": "In Development",

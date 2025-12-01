@@ -4,6 +4,12 @@
   "projects": "Projeler",
   "mainNav":"Navigasyon",
   "home":"ana sayfa",
+  "projectGrouping": {
+    "filterBy": "Filtrele",
+    "sortBy" : "Sırala",
+    "newest": "En Yeniler",
+    "oldest": "En Eskiler"
+    },
   "WeatherBy": {
     "header": "WeatherBy",
     "desc": "Anlık hava durumu, nem ve rüzgar hızını takip etmeye yarayan minimal bir uygulama.",
@@ -12,10 +18,7 @@
       "Herhangi bir şehri arama ve etkileşimli harita üzerinden konum seçme.",
       "Seçilen konum için canlı saat güncellemeleri.",
       "OpenWeather'dan dinamik olarak çekilen hava durumu verileri."
-    ],
-    "tech": "HTML, CSS, Javascript, React",
-    "github": "https://github.com/bus-ra-kaya/Weatherby"
-  },
+    ]},
   "TypeRighter": {
     "header": "TypeRighter",
     "desc": "Gerçek zamanlı istatistiklerle yazma performansını analiz eden bir web uygulaması.",
@@ -24,9 +27,7 @@
       "Dakika başına kelime (wpm), doğruluk ve hata oranını hesaplar.",
       "Sayılar veya noktalama işaretleri içeren farklı test seçenekleri.",
       "Dört farklı tema seçeneğiyle kişiselleştirme imkanı."
-    ],
-    "tech": "HTML, CSS, React, Typescript",
-    "github": "https://github.com/bus-ra-kaya/type-righter"
+    ]
   },
   "tech-used": "Kullanılan teknolojiler:",
   "wip": "Geliştirme aşamasında",

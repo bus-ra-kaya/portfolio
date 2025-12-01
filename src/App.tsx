@@ -1,15 +1,25 @@
 import './App.css';
-import Project from './components/project';
+import ProjectSort from './components/projectSort';
 import LangToggle from './components/langToggle';
+import DropdownMenu from './components/dropdownMenu';
 import {useTranslation} from "react-i18next";
+import { useState } from "react";
 
 export default function App():React.JSX.Element {
   const { t } = useTranslation();
 
+  const [activeFilter, setActiveFilter] = useState<string>("");
+  const [activeSortby, setActiveSortby] = useState<string>("");
+
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const sortingOptions = [t("projectGrouping.newest"), t("projectGrouping.oldest")];
+  const filteringOptions = ["HTML/CSS","Javascript", "Typescript", "React", "Node"];
+
 
   return (
     <div className="app-container">
-      <nav className="navbar" aria-label={t("mainNav")}>
+      <nav className="navbar" aria-label={t("mainNav")} rel='noopener noreferrer'>
               <a href="/" className='link' aria-label={t("home")}> 
                 <h1 className="title">Büşra Kaya</h1>
             </a>
@@ -32,32 +42,38 @@ export default function App():React.JSX.Element {
               <LangToggle/>
           </div>
       </nav> 
+
+
+     
       <main className="description">
 
         <p>{t("description")}</p>
 
         <br />
-        <h3>{t("projects")}</h3>  
-      <section className='projects' aria-label={t("projects")}>
-        <Project 
-        image="./weatherby.png"
-        imageAlt={t("WeatherBy.alt")}
-        header={t("WeatherBy.header")}
-        description={t("WeatherBy.desc")}
-        status="07/2025"
-        tech={t("WeatherBy.tech")}
-        github={t("WeatherBy.github")}
-      />
+        <div className='projects-header'>
+          <h3>{t("projects")}</h3>  
+          <div className='project-btn-container'>
 
-      <Project 
-        image="./type-righter.png"
-        imageAlt={t("TypeRighter.alt")}
-        header={t("TypeRighter.header")}
-        description={t("TypeRighter.desc")}
-        status={t("wip")}
-        tech={t("TypeRighter.tech")}
-        github={t("TypeRighter.github")}
-      />
+            <DropdownMenu 
+              menuName={t("projectGrouping.filterBy")} 
+              menuIcon='down-arrow' 
+              menuItems = {filteringOptions}
+              open= {openDropdown === "filterBy"}
+              onToggle= {() => setOpenDropdown(openDropdown === "filterBy" ? null : "filterBy")}
+              setActiveItem={setActiveFilter} />
+
+            <DropdownMenu 
+              menuName={t("projectGrouping.sortBy")} 
+              menuIcon='down-arrow' 
+              menuItems = {sortingOptions}
+              open = {openDropdown === "sortBy"}
+              onToggle={() => setOpenDropdown(openDropdown === "sortBy" ? null : "sortBy")}
+              setActiveItem={setActiveSortby} />
+              </div>
+        </div>
+
+      <section className='projects' aria-label={t("projects")}>
+        <ProjectSort activeFilter={activeFilter} activeSortBy={activeSortby} />
 
       </section>
         
