@@ -1,5 +1,5 @@
 {
-  "description": "Merhaba, ben Büşra. React, Typescript ve RESTful API kullanımında deneyimli bir web geliştiricisiyim. Temiz kod yazımına ve sürdürülebilir proje yapısına önem veririm. Şu anda bir yazma hızı testi geliştiriyorum.",
+  "description": "Merhaba, ben Büşra. React, Typescript, Express ve Prisma kullanımında deneyimli bir web geliştiricisiyim. Temiz kod yazımına ve sürdürülebilir proje yapısına önem veririm. Şu anda Next.js odaklı bir uygulama geliştiriyorum.",
   "switchLang": "Dili İngilizceye çevir",
   "projects": "Projeler",
   "mainNav":"Navigasyon",
@@ -19,15 +19,13 @@
       "Seçilen konum için canlı saat güncellemeleri.",
       "OpenWeather'dan dinamik olarak çekilen hava durumu verileri."
     ]},
-  "type-righter": {
-    "header": "TypeRighter",
-    "desc": "Gerçek zamanlı istatistiklerle yazma performansını analiz eden bir web uygulaması.",
-    "alt": "yazma hızı testi ekran görüntüsü",
-    "details": [
-      "Dakika başına kelime (wpm), doğruluk ve hata oranını hesaplar.",
-      "Sayılar veya noktalama işaretleri içeren farklı test seçenekleri.",
-      "Dört farklı tema seçeneğiyle kişiselleştirme imkanı."
-    ]
+  "school-timetable-maker": {
+    "header": "Ders Programı Hazırlama",
+    "desc": "İlkokul, ortaokul ve lise olmak üzere bütün yıl ve sınıflar için ders programı oluşturmayı sağlayan bir web uygulaması.",
+    "alt": "ders programı oluşturucu ekran görüntüsü",
+    "details": ["1. sınıflardan 12. sınıflara kadar ders programı oluşturma.",
+                "Önceden oluşturulmuş programları kaydetme ve görüntüleme.",
+              "Programı pdf olarak indir."]
   },
   "library-api": {
   "header": "Kütüphane API",
@@ -39,7 +37,6 @@
   ]
 },
   "tech-used": "Kullanılan teknolojiler:",
-  "wip": "Geliştirme aşamasında",
   "githubLink":"Github",
   "createTogether": "Birlikte üretelim!",
   "emailMe":"Email gönder"

@@ -1,5 +1,5 @@
 {
-  "description": "Hello, I'm Büşra. I'm a web developer with experience working with React, Typescript and integrating RESTful APIs. I care about writing clean code and building maintainable, scalable projects. Currently working on a typing speed test application.",
+  "description": "Hello, I'm Büşra. I'm a web developer with experience working with React, Typescript, Express and Prisma. I care about writing clean code and building maintainable, scalable projects. Currently working on a Next.js focused web app.",
   "switchLang": "Change language to Turkish",
   "projects": "Projects",
   "mainNav":"Navigation",
@@ -18,13 +18,13 @@
                 "Live location time updates for selected location.",
                 "Dynamic weather data pulled from OpenWeather."]
   },
-  "type-righter": {
-    "header": "TypeRighter",
-    "desc": "A web app that analyzes typing performance with real-time statistics.",
-    "alt": "typing speed test screenshot",
-    "details": ["Calculate wpm, accuracy and errors over time.",
-                "Different test options like numbers or punctuation being included.",
-                "4 theme options for variety."]
+  "school-timetable-maker": {
+    "header": "Timetable Maker",
+    "desc": "A web app that creates timetables for schools with custom teachers and classes.",
+    "alt": "timetable maker app screenshot",
+    "details": ["Create a schedule program for years from 1 to 12.",
+                "Save previously created programs and view them.",
+                "Download a pdf version of the program."]
   },
   "library-api":{
     "header": "Library API",
@@ -34,7 +34,6 @@
               "Supports filtering by title, author, or genre."]
   },
   "tech-used": "Technologies used:",
-  "wip": "In Development",
   "githubLink":"Github",
   "createTogether": "Let's create together!",
   "emailMe":"Send an email"

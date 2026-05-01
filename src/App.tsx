@@ -1,7 +1,7 @@
 import './App.css';
-import ProjectSort from './components/projectSort';
-import LangToggle from './components/langToggle';
-import DropdownMenu from './components/dropdownMenu';
+import ProjectSort from './components/ProjectSort';
+import LangToggle from './components/LangToggle';
+import DropdownMenu from './components/DropdownMenu';
 import {useTranslation} from "react-i18next";
 import { useState } from "react";
 
@@ -14,8 +14,7 @@ export default function App():React.JSX.Element {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const sortingOptions = [t("projectGrouping.newest"), t("projectGrouping.oldest")];
-  const filteringOptions = ["HTML/CSS","Javascript", "Typescript", "React", "Node"];
-
+  const filteringOptions = ["HTML/CSS","Javascript", "Typescript", "React", "Node/Express", "Prisma"];
 
   return (
     <div className="app-container">
@@ -42,13 +41,10 @@ export default function App():React.JSX.Element {
               <LangToggle/>
           </div>
       </nav> 
-
-
      
       <main className="description">
 
         <p>{t("description")}</p>
-
         <br />
         <div className='projects-header'>
           <h3>{t("projects")}</h3>  
@@ -74,21 +70,19 @@ export default function App():React.JSX.Element {
 
       <section className='projects' aria-label={t("projects")}>
         <ProjectSort activeFilter={activeFilter} activeSortBy={activeSortby} />
-
       </section>
-        
       </main>
 
       <section className="contact" aria-label={t("emailMe")}>
         <h1>{t("createTogether")}</h1>
         <a href="mailto:kaya41@protonmail.com">
           <button className='nav-btn'> 
-             kaya41@protonmail.com</button>
+             busra.kaya.dev@gmail.com</button>
         </a>
       </section>
 
       <footer>
-        2025 © — Büşra Kaya
+        2026 © — Büşra Kaya
       </footer>
     </div>
   )

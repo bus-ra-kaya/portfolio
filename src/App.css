@@ -1,5 +1,6 @@
 .app-container {
-  margin: var(--space-xxl) var(--space-xxxl) ;
+  margin: 3rem ;
+  max-width: 1200px;
 }
 
 .navbar {
@@ -10,7 +11,7 @@
 .link {
   color: var(--color-text);
   text-decoration: none;
-  font-size: var(--font-size-body);
+  font-size: 2rem;
 }
 
 .navbar-right {
@@ -18,11 +19,10 @@
 }
 
 .title {
-  margin-left: var(--space-xl);
   margin-right: var(--space-auto);
   text-align: left;
   white-space: nowrap;
-  font-size: var(--font-size-h1);
+  font-size: 3rem;
 }
 
 .nav-btn {
@@ -32,30 +32,30 @@
   border: none;
   color: var(--color-btn);
   padding: var(--space-sm) var(--space-xs);
-  font-size: var(--font-size-s);
+  font-size: 1.3rem;
   margin: var(--space-xs) var(--space-none);
   cursor: pointer;
   transition: transform 0.15s ease;
 }
 
-.nav-btn:hover, .github-btn:hover{
+.nav-btn:hover{
   color: var(--color-btn-hover);
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
 
-.nav-btn:active, .github-btn:active, .project-btn:active {
+.nav-btn:active, .project-btn:active {
   color: var(--color-btn-press);
 }
 
 h3 {
-  font-size: var(--font-size-h2);
+  font-size: 2rem;
 }
 .description {
   margin: var(--space-md) var(--space-auto);
   padding-top: var(--space-sm);
   max-width: 1200px;
-  font-size: var(--font-size-md);
+  font-size: 1.4rem;
 }
 
 .github {
@@ -123,7 +123,7 @@ h3 {
 
 .project-btn {
   padding: var(--space-sm);
-  font-size: var(--font-size-s);
+  font-size: 1rem;
   background-color: transparent;
   border: 1px solid var(--color-btn);
   color: var(--color-text);
@@ -158,7 +158,7 @@ h3 {
   background-color: var(--color-dropdown-btn);
   color: var(--color-text);
   width: 100%;
-  font-size: var(--font-size-s);
+  font-size: 1rem;
   padding: var(--space-xs);
   cursor: pointer;
 }
@@ -181,67 +181,10 @@ background-color: var(--color-dropdown-hover);
   z-index: 9;
 }
 
-
 .projects {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 20px;
-}
-
-.project-card {
-  height: auto;
-  width: 100%;
-  transition: 0.15s ease;
-  transform: scale(1);
-  background-color: hsla(0, 3%, 12%, 0.301);
-  box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.6);
-  border-radius: 10px;
-  padding: var(--space-none) var(--space-md);
-  opacity: 0.85;
-  cursor: pointer;
-  border: none;
-  color: var(--color-btn);
-}
-
-
-.project-card img {
-  max-height: 420px;
-  width: 100%;
-  box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.3);
-  border-radius: 10px;
-  margin-top: var(--space-md);
-}
-
-.project-card:hover {
-  opacity: 1;
-}
-.project-card:active {
-  opacity: 0.7;
-}
-
-.project-desc {
-  height: 80px;
-  font-size: var(--font-size-body);
-  text-shadow: 0px 0px 5px black;
-  text-align: left;
-  margin: var(--space-sm);
-  font-weight: 400;
-}
-
-.project-card h3 {
-  font-size: var(--font-size-h4);
-  margin-left: var(--space-sm);
-  text-shadow: 0px 0px 5px black;
-  margin-bottom: var(--space-none);
-  display: flex;
-  text-align: left;
-}
-
-.status {
-  display: flex;
-  justify-content: end;
-  margin-right: var(--space-sm);
-  margin-bottom: var(--space-md);
 }
 
 footer, .contact {
@@ -249,15 +192,17 @@ footer, .contact {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 1.4rem;
   padding-top: var(--space-md);
 }
 
 .contact {
-  margin-bottom: var(--space-xl);
+  margin: var(--space-xl);
 }
 
 .contact h1 {
-  font-size: var(--font-size-h1);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contact button{
@@ -267,73 +212,9 @@ footer, .contact {
   cursor: pointer;
 }
 
-.contact button:hover, .github-btn:hover, .project-btn:hover {
+.contact button:hover, .project-btn:hover {
   background-color: var(--color-accent);
   box-shadow: 0px 0px px var(--color-accent);
-}
-
-.card-detail-wrap {
-  border: none;
-  position: fixed;
-  inset: 0;
-  background-color: hsla(0, 0%, 0%, 0.705);
-  z-index: 10;
-}
-
-.card-detail {
-  position: absolute;
-  top: 160px;
-  left: 0;
-  right: 0;
-  margin: var(--space-none) var(--space-auto);
-  height: 600px;
-  width: 920px;
-  border-radius: 10px;
-  color: var(--color-text);
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: hsla(60, 1%, 15%, 0.719);
-  box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.671);
-}
-
-.card-detail img {
-  margin: var(--space-auto);
-  border-radius: 10px;
-  box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.6);
-  place-self: center;
-  width: 100%;
-  max-width: 550px;
-  height: auto;
-}
-
-.card-detail h3 {
-  font-size: var(--font-size-h4);
-}
-
-.info {
-  margin: var(--space-auto);
-  margin-right: var(--space-md);
-  text-shadow: 0px 0px 4px black;
-  font-size: var(--font-size-body);
-}
-
-.info span {
-  font-weight: 600;
-}
-
-.github-btn {
-  background-color: transparent;
-  border: 1px solid var(--color-btn);
-  color: var(--color-text);
-  padding: var(--space-sm) var(--space-md);
-  border-radius: 10px;
-  font-size: var(--font-size-body);
-  margin: var(--space-sm) var(--space-auto);
-  transition: 0.1s ease;
-  cursor:pointer;
-  align-self: center;
-  display: flex;
-  align-items: center;
 }
 
 @media (max-width: 1550px) {
@@ -354,39 +235,7 @@ footer, .contact {
   .projects {
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
-
-  .card-detail {
-  height: 550px;
-  width: 830px;
-  grid-template-columns: 4fr 3fr;
-  font-size: var(--font-size-body);
-  }
-
-  .card-detail img {
-    width: 435px;
-    height: 400px;
-  }
-
 }
-
-@media(max-width: 850px){
-  .card-detail {
-    height: 850px;
-    width: 450px;
-    grid-template-columns: none;
-    grid-template-rows: 2fr 3fr;
-    }
-  .card-detail img {
-    margin-top: var(--space-md);
-      width: 405px;
-      height: 360px;
-  }
-  .info {
-    margin:var(--space-none) var(--space-md);
-  }
-  
-}
-
 
 @media (max-width: 800px) {
 
@@ -394,9 +243,6 @@ footer, .contact {
     margin: var(--space-xl);
   }
 
-  .title {
-    font-size: var(--font-size-h1);
-  }
   .description {
       max-width: 500px;
     }
@@ -407,10 +253,6 @@ footer, .contact {
   .projects {
   grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
-
-  .contact h1 {
-  font-size: var(--font-size-h1);
-  }
 }
 
 @media (max-width: 450px) {
@@ -420,15 +262,6 @@ footer, .contact {
 
   .title {
     margin-top: var(--space-sm);
-    font-size: var(--font-size-h2);
-  }
-
-  .card-detail {
-    width: 380px;
-    }
-  .card-detail img {
-    width: 350px;
-    height: 300px;
   }
 }
 

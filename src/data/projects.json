@@ -2,22 +2,25 @@
     {
     "id": "weatherby",
     "image": "./weatherby.png",
-    "status": "07/2025",
+    "status": "2025-07",
     "tech": "HTML/CSS Javascript React",
-    "github": "https://github.com/bus-ra-kaya/Weatherby"
+    "github": "https://github.com/bus-ra-kaya/Weatherby",
+    "website": null
   },
   {
     "id":"library-api",
     "image": "./library-api.png",
-    "status": "11/2025",
-    "tech": "Typescript Node",
-    "github": "https://github.com/bus-ra-kaya/library-api"
+    "status": "2025-11",
+    "tech": "Typescript Node/Express",
+    "github": "https://github.com/bus-ra-kaya/library-api",
+    "website": null
   },
   {
-    "id": "type-righter",
-    "image": "./type-righter.png",
-    "status": "wip",
-    "tech": "HTML/CSS React Typescript",
-    "github": "https://github.com/bus-ra-kaya/type-righter"
+    "id": "school-timetable-maker",
+    "image": "./school-timetable-maker.png",
+    "status": "2026-04",
+    "tech": "HTML/CSS React Typescript Node/Express Prisma",
+    "github": "https://github.com/bus-ra-kaya/school-timetable-maker",
+    "website": "https://school-timetable-maker.vercel.app/"
   }
 ]

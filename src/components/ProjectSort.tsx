@@ -1,14 +1,13 @@
 import projectsData from '../data/projects.json';
 import {useTranslation} from "react-i18next";
-import Project from './project';
+import Project from './Project';
 
-interface ProjectSortProps {
+type Props = {
   activeFilter: string,
   activeSortBy: string,
-
 }
 
-export default function ProjectSort({activeFilter, activeSortBy}: ProjectSortProps) {
+export default function ProjectSort({activeFilter, activeSortBy}: Props) {
 
   const {t} = useTranslation();
 
@@ -27,19 +26,14 @@ export default function ProjectSort({activeFilter, activeSortBy}: ProjectSortPro
   }
 
   if (activeSortBy.length > 0){
-    const newest = activeSortBy === t(`projectGrouping.newest`);
+    const newest = activeSortBy === t("projectGrouping.newest");
     projects = projects.sort((a,b) => {
-            
-      if(a.status === t("wip")) return newest ? 1 : -1;
-      if(b.status === t("wip")) return newest ? -1 : 1;
-
-
 
       const dateA = new Date(a.status);
       const dateB = new Date(b.status);
 
       return newest ? dateB.getTime() - dateA.getTime() : dateA.getTime() - dateB.getTime()
-        })}
+  })}
 
   return (
     <>
@@ -55,6 +49,7 @@ export default function ProjectSort({activeFilter, activeSortBy}: ProjectSortPro
           status={project.status}
           tech={project.tech}
           github={project.github}
+          website={project.website ? project.website : ""}
         />
         ))
       }
