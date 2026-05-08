@@ -77,7 +77,7 @@ export default function App():React.JSX.Element {
         <h1>{t("createTogether")}</h1>
         <a href="mailto:kaya41@protonmail.com">
           <button className='nav-btn'> 
-             busra.kaya.dev@gmail.com</button>
+             busrakaya.dev@gmail.com</button>
         </a>
       </section>
 
